@@ -7,7 +7,8 @@
         favicon.src = tab.favIconUrl;
         let link = document.createElement("a");
         link.textContent = tab.title;
-        link.href = tab.url;
+        link.href = "#";
+        link.onclick = () => {chrome.tabs.create({url: tab.url})};
         container.replaceChildren(favicon, link);
         output.push(container);
     });
