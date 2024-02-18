@@ -1,0 +1,28 @@
+#loading {animation: loading 3s infinite linear;}
+@keyframes loading {
+    0% {rotate: 0deg;}
+    100% {rotate: 360deg;}
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#output div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#output div img {
+    height: 20px;
+    width: 20px;
+}
