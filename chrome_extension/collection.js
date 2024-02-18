@@ -1,7 +1,8 @@
 (async () => {
-    let data = await Storage.get("tabs");
-    let output = [];
+    let data = await Storage.get("tabs"); // get the tab data from storage
+    let output = []; // array to hold HTML elements
     data.forEach(tab => {
+        // create HTML elements and append to the output array
         let container = document.createElement("div");
         let favicon = document.createElement("img");
         favicon.src = tab.favIconUrl;
@@ -12,5 +13,5 @@
         container.replaceChildren(favicon, link);
         output.push(container);
     });
-    $("#output")[0].replaceChildren(...output);
+    $("#output")[0].replaceChildren(...output); // add the generated HTML to the document
 })();
