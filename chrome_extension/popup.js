@@ -13,4 +13,4 @@ if (confirm("Collect Tabs?")) {
         chrome.tabs.create({url: "collection.html"});
     });
 }
-// window.close();
+window.close();
