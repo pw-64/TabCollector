@@ -10,6 +10,9 @@ It is currently not on the extension store - just follow these instructions:
 4. Click Load unpacked
 5. Provide the chrome_extension folder
 
+## Feedback
+Please share any thoughts in the [v1 Feedback Discussion](https://github.com/pw-64/TabCollector/discussions/1)
+
 ## Screenshots
 ### It is in active development so these will change
 ![](before.jpg)
