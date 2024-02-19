@@ -10,6 +10,9 @@ It is currently not on the extension store - just follow these instructions:
 4. Click Load unpacked
 5. Provide the chrome_extension folder
 
+### Firefox
+Please see [this discussion comment](https://github.com/pw-64/TabCollector/discussions/2#discussioncomment-8516525) for installing & developing the extension for Firefox.
+
 ## Feedback
 Please share any thoughts in the [v1 Feedback Discussion](https://github.com/pw-64/TabCollector/discussions/1)
 
