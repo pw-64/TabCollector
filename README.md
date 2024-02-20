@@ -28,6 +28,13 @@ Please share any bugs or errors you experience in an issue with the `[BUG]` tag.
 Please include your browser, browser version, and extension version.
 **Please search the open and closed issues to help avoid creating duplicates.**
 
+## Credits
+Thank you to the following projects and websites:
+- [jQuery](https://github.com/jquery/jquery) - DOM manipulation and helpful utilities
+- [LESS](https://github.com/less/less.js) - CSS precompiler
+- [svgrepo](https://www.svgrepo.com) - Open-license SVG icons
+- [svgcrop](https://svgcrop.com) - Remove empty space around SVGs
+
 ## Screenshots
 ### It is in active development so these will change
 ![](before.jpg)
