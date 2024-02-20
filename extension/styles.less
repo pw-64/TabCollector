@@ -1,0 +1,29 @@
+body {margin: 0;}
+button {cursor: pointer;}
+
+#popup {
+    margin: 0;
+    white-space: nowrap; // prevent word wrapping
+    text-align: center;
+    > * {margin: 10px;} // consistent spacing
+    #tabs div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    > div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img {
+            height: 20px;
+            width: 20px;
+        }
+    }
+}

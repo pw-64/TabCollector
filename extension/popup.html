@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet/less" type="text/css" href="styles.less"/>
+        <script src="less.js"></script>
+        <script src="jquery.js"></script>
+        <script src="storage.js"></script>
     </head>
-    <body>
-        <img src="loading.svg" id="loading" width="30px" height="30px">
-        <script src="storage.js"></script> <!-- interacting with the extension storage -->
-        <script src="popup.js"></script> <!-- main -->
+    <body id="popup">
+        <h2>TabCollector</h2>
+        <div id="tabs"></div>
+        <p id="message">There are no tabs to collect at the moment.</p>
+        <button id="collect">Collect</button>
+        <script src="popup.js"></script>
     </body>
 </html>
