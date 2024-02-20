@@ -15,6 +15,11 @@ chrome.tabs.query({currentWindow: true}, tabs => {
         }
     });
     $("#tabs")[0].replaceChildren(...children);
+    $("#message").hide();
+    if (filtered_tabs.length === 0) {
+        $("#collect").hide();
+        $("#message").show();
+    }
 });
 
 $("#collect")[0].onclick = () => { // bind to button press
