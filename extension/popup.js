@@ -1,17 +1,37 @@
-if (confirm("Collect Tabs?\nThis will clear any unsaved data for tabs in this window")) { // confirm the user wants to collect & destroy tabs
-    chrome.tabs.query({currentWindow: true}, (tabs) => { // get tabs in this window
-        let data = []; // array to hold extracted tab information
-        tabs.forEach(tab => {
-            // for each tab, retrieve the favicon URL, title (tab name) and URL
-            data.push({
-                favIconUrl: tab.favIconUrl,
-                title: tab.title,
-                url: tab.url
-            });
-            chrome.tabs.remove(tab.id); // close the tab
-        });
-        Storage.set("tabs", data); // store that tab data in the extension storage
-        chrome.tabs.create({url: "collection.html"}); // open the collection tab
+let checkboxes = [], filtered_tabs = [];
+
+chrome.tabs.query({currentWindow: true}, tabs => {
+    let children = [];
+    tabs.forEach(tab => {
+        if (!tab.url.includes("chrome-extension://" + chrome.runtime.id)) {
+            let container = $("<div>")[0];
+            let checkbox = $("<input>", {type: "checkbox"})[0];
+            let tab_title = $("<span>")[0];
+            tab_title.textContent = tab.title;
+            container.append(checkbox, tab_title);
+            children.push(container);
+            checkboxes.push(checkbox);
+            filtered_tabs.push(tab);
+        }
     });
-}
-window.close(); // close the popup
+    $("#tabs")[0].replaceChildren(...children);
+});
+
+$("#collect")[0].onclick = () => { // bind to button press
+    if (checkboxes.map(checkbox => checkbox.checked).includes(true)) { // if at least one checkbox is ticked
+        let i = 0, data = [];
+        filtered_tabs.forEach(tab => {
+            if (checkboxes[i++].checked) {
+                data.push({
+                    favIconUrl: tab.favIconUrl,
+                    title: tab.title,
+                    url: tab.url,
+                    tab_id: tab.id,
+                });
+            }
+        });
+        Storage.set("tabs", data);
+        chrome.tabs.create({url: "collection.html"});
+        data.forEach(tab => chrome.tabs.remove(tab.tab_id));
+    }
+};
