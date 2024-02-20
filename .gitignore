@@ -1,3 +1,5 @@
 building/build
 building/dist
 building/chrome.pem
+building/2-dist.sh
+building/3-cleanup.sh
