@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "TabCollector",
+    "description": "Collect a list of open tabs, then close them to save resources",
+    "version": "1",
+    "action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": ["scripting", "tabs", "storage"]
+}
