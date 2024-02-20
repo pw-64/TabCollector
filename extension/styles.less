@@ -1,12 +1,15 @@
+body {margin: 0;}
+button {cursor: pointer;}
+
 #popup {
     margin: 0;
-    > * {margin: 10px;}
-    table {
-        border-collapse: collapse;
-        td {
-            border: solid black;
-            border-width: 0 1px 0 1px;
-        }
+    white-space: nowrap; // prevent word wrapping
+    text-align: center;
+    > * {margin: 10px;} // consistent spacing
+    #tabs div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
     }
 }
 
