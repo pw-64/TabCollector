@@ -1,6 +1,6 @@
 import json
 
-VERSION = "1.2"
+VERSION = "1.3"
 
 with open("../source/common/version.js", "w") as file:
     file.write(f"const VERSION = {VERSION};")
