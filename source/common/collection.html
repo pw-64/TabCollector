@@ -2,15 +2,16 @@
 <html>
     <head>
         <title>Tab Collection</title>
+        <link rel="icon" type="image/x-icon" href="icon.svg">
         <link rel="stylesheet/less" type="text/css" href="styles.less"/>
         <script src="less.js"></script>
-        <link rel="icon" type="image/x-icon" href="icon.svg">
+        <script src="jquery.js"></script>
+        <script src="vendor.js"></script>
+        <script src="storage.js"></script>
     </head>
     <body>
         <h1>Your Collection</h1>
-        <div id="output"></div> <!-- generated HTML container -->
-        <script src="jquery.js"></script> <!-- DOM manipulation library -->
-        <script src="storage.js"></script> <!-- interacting with the extension storage -->
-        <script src="collection.js"></script> <!-- main -->
+        <div id="output"></div>
+        <script src="collection.js"></script>
     </body>
 </html>

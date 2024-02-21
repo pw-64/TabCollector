@@ -5,7 +5,7 @@ let checkboxes = [], filtered_tabs = [];
 chrome.tabs.query({currentWindow: true}, tabs => {
     let children = [];
     tabs.forEach(tab => {
-        if (!tab.url.includes("chrome-extension://" + chrome.runtime.id)) {
+        if (!tab.url.includes(vendor.extension_url)) {
             let container = $("<div>")[0];
             let checkbox = $("<input>", {type: "checkbox"})[0];
             let tab_title = $("<span>")[0];
@@ -37,8 +37,10 @@ $("#collect")[0].onclick = () => { // bind to button press
                 });
             }
         });
-        Storage.set("tabs", data);
-        chrome.tabs.create({url: "collection.html"});
-        data.forEach(tab => chrome.tabs.remove(tab.tab_id));
+        Storage.set("tabs", data).then(() => {
+            chrome.tabs.create({url: "collection.html"});
+            data.forEach(tab => chrome.tabs.remove(tab.tab_id));
+            window.close();
+        });
     }
 };
