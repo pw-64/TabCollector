@@ -1,5 +1,13 @@
 # TabCollector
-A browser extension that collects a list of open tabs, then closes them to save resources.
+A browser extension that collects a list of open tabs, then closes them to save resources. Click [here](https://github.com/pw-64/TabCollector#screenshots) for some usage screenshots.
+
+## Example Use Cases
+- Online Shopping - Collect a list of products for later review
+- YouTube - Collect a list of videos, without having to sign in with a Google account and make a playlist
+- Save Resources - Even when your tabs are in the background, they are still using your computer's resources. I am sure we are all aware of the "Chrome memory hog" issue. However, the tab collection is just a single, static page that does no further processing once loaded and uses very little memory. This can be very helpful for computers with limited RAM, by effectively hibernating the websites and removing their resource consumption. You could even save the collection URL and close the browser all together, then reopen the collection when you need to access the links.
+
+> [!TIP]
+> The tab collection URL can be shared with other people with the TabCollector extension and they can view those lists. This is a quick and handy way to share a lot of links, rather than copy-pasting each one into an email or message. This even works offline, since all of the processing is done locally on your browser.
 
 ## Installation
 > [!IMPORTANT]
