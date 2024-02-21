@@ -11,8 +11,8 @@ It is currently not on the extension store - just follow these instructions:
 4. Click Load unpacked
 5. Provide the `extension` folder
 
-> [!NOTE]
-> Please ignore the `Unrecognized manifest key 'browser_specific_settings'` warning, as this is used while developing for Firefox and causes no known issues with Chrome. When we split the extension into seperate Chrome and Firefox folders, this warning will be removed.
+> [!IMPORTANT]
+> The Chrome `.crx` files in [releases](https://github.com/pw-64/TabCollector/releases) have not been signed by Chrome Web Store, so you may get the warning `Package is invalid: 'CRX_REQUIRED_PROOF_MISSING'` - therefore, they will no longer be provided. You can still install the extension in Chrome by following the simple and easy [build instructions](https://github.com/pw-64/TabCollector/tree/main/building). Then go to chrome://extensions and enable "Developer Mode" and "Load unpacked" - select the `building/build/chrome` folder.
 
 ### Firefox
 Please see [this discussion comment](https://github.com/pw-64/TabCollector/discussions/2#discussioncomment-8516525) for installing & developing the extension for Firefox.
