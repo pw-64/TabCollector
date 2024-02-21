@@ -1,3 +1,5 @@
+$("#version")[0].textContent = "v" + VERSION;
+
 let checkboxes = [], filtered_tabs = [];
 
 chrome.tabs.query({currentWindow: true}, tabs => {
