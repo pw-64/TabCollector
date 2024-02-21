@@ -37,10 +37,8 @@ $("#collect")[0].onclick = () => { // bind to button press
                 });
             }
         });
-        Storage.set("tabs", data).then(() => {
-            chrome.tabs.create({url: "collection.html"});
-            data.forEach(tab => chrome.tabs.remove(tab.tab_id));
-            window.close();
-        });
+        chrome.tabs.create({url: `collection.html?${encodeURIComponent(JSON.stringify(data))}`});
+        data.forEach(tab => chrome.tabs.remove(tab.tab_id));
+        window.close();
     }
 };
