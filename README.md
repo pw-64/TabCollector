@@ -60,9 +60,15 @@ Please share any thoughts in the [v1 Feedback Discussion](https://github.com/pw-
 - **Please search the open and closed issues to help avoid creating duplicates.**
 - If built from source, please use the latest commit of main and include the commit hash in the issue body.
 
-## Credits
+## Acknowledgments
 Thank you to the following projects and websites:
 - [jQuery](https://github.com/jquery/jquery) - DOM manipulation and helpful utilities
 - [LESS](https://github.com/less/less.js) - CSS precompiler
 - [svgrepo](https://www.svgrepo.com) - Open-license SVG icons
 - [svgcrop](https://svgcrop.com) - Remove empty space around SVGs
+
+### Contributors
+Please see [CONTRIBUTING.md](https://github.com/pw-64/TabCollector/blob/main/CONTRIBUTING.md) for information on contributing to this repository.
+
+Thank you very much to everyone that contributes to this project:
+- @pw-64 (placeholder)
