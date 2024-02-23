@@ -70,5 +70,4 @@ Thank you to the following projects and websites:
 ### Contributors
 Please see [CONTRIBUTING.md](https://github.com/pw-64/TabCollector/blob/main/CONTRIBUTING.md) for information on contributing to this repository.
 
-Thank you very much to everyone that contributes to this project:
-- @pw-64 (placeholder)
+Thank you very much to everyone that contributes to this project.
