@@ -9,14 +9,7 @@ A browser extension that collects a list of open tabs, then closes them to save 
 > [!TIP]
 > The tab collection URL can be shared with other people with the TabCollector extension and they can view those lists. This is a quick and handy way to share a lot of links, rather than copy-pasting each one into an email or message. This even works offline, since all of the processing is done locally on your browser.
 
-<details><summary><h2>Screenshots</h2></summary>
-  
-### It is in active development so these will change
-![](before.jpg)
-![](during.jpg)
-![](after.jpg)
-
-</details>
+## [Screenshots](screenshots.md)
 
 ## Installation
 > [!IMPORTANT]
@@ -24,18 +17,14 @@ A browser extension that collects a list of open tabs, then closes them to save 
 > 
 > The distributables will be replaced by zips of the `/building/build/*` folders for each browser.
 
-<details><summary><h3>Chrome</h3></summary>
-
+### Chrome
 1. Download the [latest release](https://github.com/pw-64/TabCollector/releases/latest) and extract
 2. Open `chrome://extensions`
 3. Enable `Developer Mode`
 4. Click `Load unpacked`
 5. Provide the extracted folder
 
-</details>
-
-<details><summary><h3>Firefox</h3></summary>
-
+### Firefox
 Firefox doesn't allow unverified extensions, unless you want to use temporary mode. That means you have to re-install the extension every time you start the browser. Until there is a signed release, it will be unuseable on Firefox for normal users until it is signed.
 
 However, there is a workaround:
@@ -45,8 +34,6 @@ However, there is a workaround:
 4. Run `cd build/firefox && web-ext run` to launch Firefox with the extension installed
 5. (optional) Link Firefox to that command: `nano ~/.bashrc` and add `alias firefox='cd PATH_TO_REPO/building/build/firefox && web-ext run'`
 6. ^ Now you can launch Firefox (with the extension installed) simply by running `firefox` in the terminal
-
-</details>
 
 ### Other Browsers
 If you would like to see this extension in another browser, please open an issue with the `[FEATURE]` tag. While I am in the process of sorting out the Chrome and Firefox signing, further browser support is on hold, but please do open the issue so we can evaluate it in the future.
@@ -68,6 +55,6 @@ Thank you to the following projects and websites:
 - [svgcrop](https://svgcrop.com) - Remove empty space around SVGs
 
 ### Contributors
-Please see [CONTRIBUTING.md](https://github.com/pw-64/TabCollector/blob/main/CONTRIBUTING.md) for information on contributing to this repository.
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for information on contributing to this repository.
 
 Thank you very much to everyone that contributes to this project.
