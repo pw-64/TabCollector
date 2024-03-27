@@ -1,6 +1,9 @@
 # TabCollector
 A browser extension that collects a list of open tabs, then closes them to save resources.
 
+> [!NOTE]
+> I am doing my college exams at the moment - development has been put on hold. I will help with bug fixes, but new featues will have to wait. Please still open issues as I will still look at them, I just cannot promise I will have time available to address them. Thank you for your understanding and I hope you find TabCollector useful, as it is currently stable and ready to use.
+
 ## Example Use Cases
 - Online Shopping - Collect a list of products for later review
 - YouTube - Collect a list of videos, without having to sign in with a Google account and make a playlist
