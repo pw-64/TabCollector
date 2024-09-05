@@ -1,9 +1,6 @@
 # TabCollector
 A browser extension that collects a list of open tabs, then closes them to save resources.
 
-> [!NOTE]
-> I am doing my college exams at the moment - development has been put on hold. I will help with bug fixes, but new featues will have to wait. Please still open issues as I will still look at them, I just cannot promise I will have time available to address them. Thank you for your understanding and I hope you find TabCollector useful, as it is currently stable and ready to use.
-
 ## Example Use Cases
 - Online Shopping - Collect a list of products for later review
 - YouTube - Collect a list of videos, without having to sign in with a Google account and make a playlist
@@ -16,8 +13,8 @@ A browser extension that collects a list of open tabs, then closes them to save 
 
 ## Installation
 > [!IMPORTANT]
-> Distributables will not be generated anymore starting v1.4, since they require signing from the vendor's extension store. I am in the process of sorting this out. Any distributables from previous releases will not work.
-> 
+> Distributables will not be generated anymore starting v1.4, since they require signing from the vendor's extension store.
+> Any distributables from previous releases will not work.
 > The distributables will be replaced by zips of the `/building/build/*` folders for each browser.
 
 ### Chrome
@@ -30,7 +27,7 @@ A browser extension that collects a list of open tabs, then closes them to save 
 ### Firefox
 Firefox doesn't allow unverified extensions, unless you want to use temporary mode. That means you have to re-install the extension every time you start the browser. Until there is a signed release, it will be unuseable on Firefox for normal users until it is signed.
 
-However, there is a workaround:
+**However, there is a workaround:**
 1. Clone the repo
 2. Install Mozilla's [`web-ext`](https://github.com/mozilla/web-ext) tool
 3. Run `cd building && bash 1-build.sh` to build the extension (or use the zipped
